@@ -45,6 +45,10 @@ main div#content {
     flex-grow: 2;
 }
 
+main section.persons {
+    white-space: pre-wrap;
+}
+
 main section.log,  main pre, main pre code {
     font-family: monospace;
     white-space: pre-wrap;
