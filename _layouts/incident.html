@@ -9,7 +9,11 @@ layout: default
 </section>
 
 <section class="persons">
-    {{ page.persons | lstrip }}
+    <ul>
+    {% for person in page.persons %}
+    <li>{{person}}</li>
+    {% endfor %}
+    </ul>
 </section>
 
 <section class="log">
