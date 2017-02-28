@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1><a href="{{site.github.url}}">{{site.title}}</a></h1>
+        </header>
+
+        <main>
+        <nav>
+            <ul>
+                {% for incident in site.incidents %}
+                <li>
+                    <a href="{{ incident.url | prepend: site.github.url }}">{{ incident.when }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <div id="content">
+            {{ content }}
+        </div>
+        </main>
+    </body>
+</html>
