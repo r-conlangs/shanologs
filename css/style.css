@@ -17,6 +17,21 @@ body {
     color: black;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: blue;
+    text-decoration: none;
+    font-weight: normal;
+}
+ 
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 main {
     display: flex;
     align-items: flex-start;
