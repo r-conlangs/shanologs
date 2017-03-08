@@ -49,3 +49,7 @@ main section.log,  main pre, main pre code {
     font-family: monospace;
     white-space: pre-wrap;
 }
+
+main section.log img {
+    width: 100%;
+}
